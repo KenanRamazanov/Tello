@@ -89,44 +89,4 @@ const Register = () => {
 
 export default Register;
 
-{
-  /* <Input
-            placeholder={"Ad və soyadınızı daxil edin"}
-            type={"text"}
-            name={"firstname"}
-            register={register("firstname")}
-            // pattern={pattern}
-            errors={errors.firstname}
-            label={"Ad Soyad"}
-            validation={{
-              pattern: {
-                value: /^[a-zA-Z]+ [a-zA-Z]+$/,
-              },
-            }}
-          /> */
-}
-{
-  /* <Input
-            placeholder={"nümunə@gmail.com"}
-            type={"email"}
-            name={"email"}
-            register={register("email")}
-            // pattern={pattern}
-            errors={errors.email}
-            label={"e-mail"}
-            // validation={{
-            //   pattern: {
-            //     value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
-            //   },
-            // }}
-          /> */
-}
-{
-  /* <PhoneInput
-            placeholder="00-000-0000"
-            value={value}
-            onChange={setValue}
-            name={"Mobil nömrə"}
-            defaultCountry="AZ"
-          /> */
-}
+
