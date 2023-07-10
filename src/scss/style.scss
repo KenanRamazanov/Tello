@@ -1,0 +1,17 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+@import url("http://fonts.cdnfonts.com/css/euclid-circular-a?styles=100037,100034,100036,100039,100031");
+body {
+  font-family: Euclid Circular A, sans-serif;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

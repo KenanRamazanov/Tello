@@ -1,0 +1,28 @@
+.questions {
+  .question {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 80px;
+    .title {
+      text-align: center;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      color: #1d2123;
+      margin-bottom: 48px;
+      padding-top: 40px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .questions {
+    .question {
+      margin-bottom: 88px;
+      gap: 24px;
+      .title {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}

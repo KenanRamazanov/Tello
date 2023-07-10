@@ -1,0 +1,43 @@
+@import "../../../scss/variables.scss";
+.about {
+  margin: 130px 0;
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    gap: 24px;
+    h4 {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: $clr-gray1;
+      width: 320px;
+    }
+    img {
+      padding-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .about {
+    margin: 0;
+    .details {
+      h4 {
+      }
+
+      p {
+        margin: 0 16px;
+      }
+      img {
+      }
+    }
+  }
+}

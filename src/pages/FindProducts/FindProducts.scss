@@ -1,0 +1,18 @@
+.searchResults {
+  padding: 50px 0 50px 0;
+  .info {
+    .product-number {
+      font-weight: 500;
+      font-size: 1.1rem;
+      color: #333333;
+      margin-left: 10px;
+    }
+  }
+  .results {
+    display: flex;
+    column-gap: 22px;
+    row-gap: 35px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

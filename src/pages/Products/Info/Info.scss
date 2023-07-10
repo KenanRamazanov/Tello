@@ -1,0 +1,56 @@
+@import "../../../scss/variables.scss";
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+  .product-number {
+    margin-top: 7px;
+    span {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $clr-gray1;
+    }
+  }
+  .sort {
+    height: 40px;
+    border: 1px solid $clr-gray4;
+    border-radius: 8px;
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    padding: 10px 12px 10px 16px;
+    cursor: pointer;
+    position: relative;
+    .sort-dropdown {
+      position: absolute;
+      left: 0%;
+      width: 175px;
+      top: 105%;
+      background-color: #fff;
+      border: 1px solid $clr-gray4;
+      z-index: 100;
+      border-radius: 8px;
+      .sort-option {
+        padding: 8px 16px;
+        cursor: pointer;
+        // position: relative;
+        transition: all 0.1s ease;
+        white-space: nowrap;
+        &:hover {
+          color: $clr-main;
+        }
+      }
+    }
+    * {
+      white-space: nowrap;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .info {
+    .sort {
+      display: none;
+    }
+  }
+}

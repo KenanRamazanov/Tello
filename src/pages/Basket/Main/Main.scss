@@ -1,0 +1,112 @@
+@import "../../../scss/variables.scss";
+.mainCart {
+  margin-left: 65px;
+  padding-left: 30px;
+  display: flex;
+  gap: 32px;
+  background: #ffffff;
+  border-radius: 8px;
+  .deleteIcon {
+    padding-right: 10px;
+    cursor: pointer;
+  }
+  .cart-photo {
+    img {
+      width: 50px;
+      width: 72px;
+      padding: 16px 0;
+      cursor: pointer;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .name {
+      padding-top: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      cursor: pointer;
+      width: 340px;
+
+      color: $clr-gray1;
+    }
+    .cart-detail {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      .card-color {
+        padding-right: 20px;
+
+        .color {
+          color: $clr-gray3;
+        }
+      }
+      span {
+        color: $clr-gray1;
+        text-transform: capitalize;
+      }
+    }
+  }
+  .numberCarts {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    flex: 1;
+    justify-content: center;
+    button {
+      border: none;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $clr-primary-dark;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .mainCart {
+    width: 100%;
+    margin: 0 16px;
+    padding: 24px;
+    position: relative;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .deleteIcon {
+      position: absolute;
+      top: 5%;
+      right: 5%;
+    }
+    .cart-photo {
+      img {
+        padding: 0;
+      }
+    }
+    .content {
+      .name {
+        width: 100%;
+      }
+      .cart-detail {
+        display: flex;
+        flex-direction: column;
+        .card-color {
+          display: flex;
+          gap: 12px;
+        }
+      }
+    }
+  }
+}

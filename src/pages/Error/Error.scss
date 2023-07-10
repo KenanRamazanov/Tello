@@ -1,0 +1,77 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 245, 25, 0.17);
+  margin: 0 35px;
+  padding: 0 40px;
+  height: 797px;
+  .err-404 {
+    margin-bottom: 130px;
+  }
+
+  .errorImg {
+    margin-bottom: 80px;
+
+    img {
+      width: 575px;
+      height: 575px;
+      margin-bottom: 150px;
+      margin-right: 50px;
+    }
+  }
+  .error-message {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    padding-left: 40px;
+    margin-bottom: 80px;
+    button {
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 29px;
+      color: rgba(0, 0, 0, 0.88);
+      background: rgba(36, 194, 80, 0.85);
+      text-align: center;
+      padding: 16px 0;
+      width: 255px;
+      border: none;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+
+    h2 {
+      font-size: 64px;
+      line-height: 75px;
+    }
+    h4 {
+      font-weight: 300;
+      font-size: 56px;
+      line-height: 66px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .error {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    .err-404 {
+      display: none;
+    }
+
+    .errorImg {
+      img {
+        margin: 0;
+        width: 460px;
+        height: 450px;
+      }
+    }
+    .error-message {
+      padding-left: 0;
+      padding-top: 50px;
+      
+    }
+  }
+}

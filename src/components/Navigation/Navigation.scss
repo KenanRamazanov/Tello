@@ -1,0 +1,29 @@
+@import "../../scss/variables.scss";
+.navigation {
+  padding-top: 25px;
+  padding-left: 19px;
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    .slug {
+      text-transform: capitalize;
+    }
+    li {
+      display: flex;
+      gap: 11px;
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $clr-gray2;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .navigation {
+    padding-left: 0;
+  }
+}

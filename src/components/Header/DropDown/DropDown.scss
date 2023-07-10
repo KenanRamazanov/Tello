@@ -1,0 +1,48 @@
+@import "../../../scss/variables.scss";
+.dropdown-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  border-top: 1px solid $clr-main;
+  background-color: #fff;
+  padding: 40px 15px;
+  z-index: 100;
+  .row {
+    display: flex;
+    .adverts {
+      .dropAdvert {
+        display: none;
+      }
+      .sec {
+        box-shadow: 0px 4px 24px 0px rgba(130, 130, 130, 0.16);
+        border-radius: 8px;
+        margin: 0;
+        padding-top: 20px;
+        margin-left: 100px;
+        width: 488px;
+        height: 228px;
+      }
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      .column-title {
+        font-weight: 400;
+        font-size: 1.05rem;
+        color: $clr-gray2;
+        margin-bottom: 8px;
+        padding-left: 75px;
+        text-transform: capitalize;
+        transition: all 0.1s ease;
+        cursor: pointer;
+
+        &:hover {
+          color: $clr-main;
+        }
+      }
+    }
+  }
+}

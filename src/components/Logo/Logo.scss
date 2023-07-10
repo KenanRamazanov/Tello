@@ -1,0 +1,17 @@
+@import "../../scss/variables.scss";
+.logo {
+  a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    cursor: pointer;
+
+    h2 {
+      color: $clr-main;
+
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+    }
+  }
+}

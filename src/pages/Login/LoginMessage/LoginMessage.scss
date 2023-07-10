@@ -1,0 +1,17 @@
+@import "../../../scss/variables.scss";
+.login-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 95px 0 170px 0;
+  gap: 48px;
+  p {
+    width: 385px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: $clr-gray2;
+    text-align: center;
+  }
+}

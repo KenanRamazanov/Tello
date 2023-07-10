@@ -1,0 +1,37 @@
+@import "../../../scss/variables.scss";
+.items {
+  background: #f1f1f1;
+  border-radius: 8px;
+  width: 65%;
+  margin: 0 auto;
+
+  .answer {
+    font-size: 14px;
+    line-height: 20px;
+    padding: 32px 24px 18px 24px;
+    color: $clr-gray2;
+  }
+  .item {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px 14px 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    img {
+      cursor: pointer;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .items {
+    width: 100%;
+    .item {
+      font-weight: 400;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../../../scss/variables.scss";
+.brands {
+  background-color: #f5f5f7;
+  padding: 48px 0 88px 75px;
+  
+ 
+
+  .slick-track {
+    display: flex;
+    gap: 16px;
+  }
+
+  .slick-dots {
+    bottom: -55px;
+    li {
+      button {
+        &::before {
+          font-size: 10px;
+        }
+      }
+    }
+    li.slick-active {
+      button {
+        &::before {
+          color: $clr-main;
+        }
+      }
+    }
+  }
+  .brand-name {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 12px 24px;
+    cursor: pointer;
+    text-align: center;
+    width: 176px !important;
+    height: 80px;
+  }
+}
+@media (max-width: 576px) {
+  .brands {
+    display: none;
+  }
+
+}

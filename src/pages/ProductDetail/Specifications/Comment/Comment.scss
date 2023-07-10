@@ -1,0 +1,101 @@
+.comments {
+  display: flex;
+  gap: 77px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 35px;
+  .comment-star {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    .stars {
+      display: flex;
+      gap: 12px;
+    }
+    span {
+      font-weight: 300;
+      font-size: 72px;
+      line-height: 91px;
+      color: #000000;
+      text-align: center;
+      padding-top: 45px;
+    }
+    img {
+      width: 28px;
+      height: 28px;
+    }
+  }
+  .comment-content {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #bdbdbd;
+    padding-left: 31px;
+    justify-content: center;
+    margin-top: 38px;
+
+    gap: 8px;
+    .from {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .day {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #4f4f4f;
+      }
+
+      .name {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        color: #4f4f4f;
+      }
+    }
+    .detail {
+      font-size: 12px;
+      line-height: 16px;
+      color: #4f4f4f;
+      font-weight: 400;
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #4f4f4f;
+      padding-top: 8px;
+      width: 800px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .comments {
+    flex-direction: column;
+    .comment-star {
+      .stars {
+        border-bottom: 1px solid #c4c4c4;
+        padding-bottom: 26px;
+      }
+      span {
+      }
+      img {
+      }
+    }
+    .comment-content {
+      .from {
+        .day {
+        }
+
+        .name {
+        }
+      }
+      .detail {
+      }
+      p {
+      
+        width: 328px;
+      }
+    }
+  }
+}

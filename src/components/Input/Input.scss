@@ -1,0 +1,39 @@
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  span {
+    color: red;
+    font-weight: 500;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    align-self: flex-end;
+    margin-top: 4px;
+  }
+  label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4f4f4f;
+  }
+  input {
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 8px;
+    border: none;
+    width: 315px;
+    padding: 14px 0 14px 16px;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      color: #828282;
+      line-height: 20px;
+    }
+  }
+  .formDetail {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

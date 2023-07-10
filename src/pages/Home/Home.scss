@@ -1,0 +1,22 @@
+// .advertisement{
+//     display: flex;
+//     justify-content: center;
+//     gap: 32px;
+// }
+
+.homePage {
+  .about-cont {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 576px) {
+  .homePage {
+    .about-cont {
+      margin: 80px 0 70px 0;
+      display: flex;
+      gap: 55px;
+      flex-direction: column;
+    }
+  }
+}

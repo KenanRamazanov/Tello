@@ -1,0 +1,31 @@
+@import "../../../scss/variables.scss";
+
+.userInfo {
+  width: 60%;
+  h1 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: $clr-gray2;
+    margin-bottom: 16px;
+  }
+  .infos {
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 8px;
+    gap: 32px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  .userInfo {
+    width: 100%;
+    margin-bottom: 40px;
+    .infos {
+      padding: 24px;
+      gap: 24px;
+    }
+  }
+}

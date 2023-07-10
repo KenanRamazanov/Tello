@@ -1,0 +1,55 @@
+@import "../../../scss/variables.scss";
+.withSocial {
+  display: flex;
+  gap: 56px;
+  // justify-content: center;
+  padding-right: 30px;
+  .social {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    span {
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      color: $clr-gray2;
+    }
+    .facebook {
+      background: #4267b2;
+      border-radius: 20px;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 10px;
+        height: 15px;
+        cursor: pointer;
+      }
+    }
+    .google {
+      width: 32px;
+      height: 32px;
+      background: #db4437;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 16px;
+        cursor: pointer;
+
+        height: 16px;
+      }
+    }
+  }
+}
+@media (max-width:576px) {
+  .withSocial{
+    gap: 43px;
+  }
+
+  
+}

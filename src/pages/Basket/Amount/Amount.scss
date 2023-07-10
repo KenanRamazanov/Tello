@@ -1,0 +1,60 @@
+@import "../../../scss/variables.scss";
+
+.amount {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 30%;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-right: 75px;
+  justify-content: center;
+  height: fit-content;
+  padding: 32px 24px;
+
+  h2 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #1d2123;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 16px;
+    li {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $clr-gray1;
+      span {
+        display: flex;
+        gap: 10px;
+        color: #1d2123;
+      }
+    }
+  }
+  .total {
+    display: flex;
+    padding-top: 16px;
+    justify-content: space-between;
+    border-top: 1px solid $clr-gray3;
+    span {
+      display: flex;
+      gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .amount {
+    width: 100%;
+    order: -1;
+    margin: 0 16px;
+    padding: 24px 16px;
+  }
+}

@@ -1,0 +1,103 @@
+@import "../../scss/variables.scss";
+header {
+  margin: 0 auto;
+  border-bottom: 1px solid $clr-main;
+  width: 100%;
+  // padding: 20px 75px 0 75px;
+  position: relative;
+
+  .headerline {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    align-items: center;
+    padding: 24px 75px 28px 75px;
+
+    .hamburger {
+      width: 20.1px;
+      height: 13.6px;
+      display: none;
+      cursor: pointer;
+    }
+
+    .shopping {
+      display: flex;
+      gap: 35px;
+      align-items: center;
+      .user-Name {
+        color: $clr-gray2;
+        font-size: 1.2rem;
+        font-weight: 500;
+        text-transform: capitalize;
+      }
+      a {
+        color: $clr-gray2;
+      }
+      img {
+        cursor: pointer;
+      }
+      .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $clr-main;
+        margin-left: -20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          color: #fff;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  header {
+    padding: 0;
+
+    .headerline {
+      padding: 13px 20px 0 16px;
+      flex-wrap: wrap;
+
+      .hamburger {
+        display: block;
+      }
+
+      form {
+        order: 1;
+        margin: 16px;
+
+        input {
+          width: 328px;
+          background-color: $clr-basic200;
+        }
+        img {
+          left: 5%;
+          top: 32%;
+        }
+      }
+      .shopping {
+        position: relative;
+        gap: 15px;
+        margin-left: 20px;
+
+        .circle {
+          position: absolute;
+          right: -10%;
+          top: -40%;
+          width: 18px;
+          height: 18px;
+
+          span {
+            font-size: 10px;
+            line-height: 10px;
+          }
+        }
+      }
+    }
+  }
+}

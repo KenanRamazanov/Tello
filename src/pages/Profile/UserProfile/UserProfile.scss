@@ -1,0 +1,43 @@
+@import "../../../scss/variables.scss";
+.section {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 25%;
+  padding: 32px 24px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    li {
+      font-weight: 400;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      &.active {
+        color: $clr-main;
+      }
+    //   &:hover {
+    //     color: $clr-main;
+    //   }
+    }
+  }
+  h5 {
+    font-weight: 500;
+    font-size: 20px;
+    color: #1d2123;
+    line-height: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .section{
+    width: 100%;
+  }
+}

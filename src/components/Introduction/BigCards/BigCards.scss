@@ -1,0 +1,101 @@
+@import "../../../scss/variables.scss";
+.banner-container {
+  display: flex;
+  gap: 32px;
+  margin-top: 106px;
+  .banner {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: linear-gradient(to right, #e4e9f2, #f5e092);
+    gap: 20px;
+    .banner-title {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      padding: 50px;
+      h3 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        color: #303030;
+      }
+      // span {
+      //   font-weight: 300;
+      //   font-size: 16px;
+      //   line-height: 24px;
+      //   color: #303030;
+      // }
+      a {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: $clr-link;
+        display: flex;
+        align-items: center;
+        gap: 17px;
+      }
+    }
+    .bannerImg {
+      display: flex;
+      justify-content: flex-end;
+      img {
+      }
+    }
+    .xiaomi {
+      width: 100%;
+    }
+    &.first {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  .other {
+    width: 50%;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    .small {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .banner-container {
+    display: flex;
+    flex-direction: column;
+    .banner {
+      .banner-title {
+        padding: 33px;
+        h3 {
+        }
+
+        a {
+        }
+      }
+      .bannerImg {
+        img {
+        }
+      }
+      .xiaomi {
+      }
+      &.first {
+        width: 100%;
+      }
+    }
+    .other {
+      width: 100%;
+      .small {
+        width: 100%;
+      }
+      .bannerImg {
+        img {
+          width: 220px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.adverts {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+  .advert {
+    border-radius: 8px;
+    display: flex;
+    width: 45%;
+    align-items: center;
+    padding: 16px 32px;
+    justify-content: space-between;
+    margin: 65px 0;
+    
+    .advert-info {
+      h4 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1;
+      }
+      button {
+        background-color: transparent;
+        border: 1px solid #828282;
+        border-radius: 50px;
+        color: #828282;
+        cursor: pointer;
+        font-size: 17px;
+        padding: 5px 25px;
+      }
+    }
+    .price {
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      padding: 15px 0;
+      .second {
+        color: #989898;
+      }
+    }
+    .advImg {
+      img {
+        width: 160px;
+        background-color: transparent;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .adverts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: baseline;
+    margin: 70px 0 48px 0;
+    .advert {
+      width: 100%;
+      padding: 6px;
+      margin: 0;
+      
+      .advert-info {
+        h4 {
+          font-size: 20px;
+        }
+        button {
+          padding: 3px 15px;
+          width: 60%;
+          font-size: 13px;
+        }
+      }
+      .price {
+        span {
+          font-size: 16px;
+        }
+
+        .second {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

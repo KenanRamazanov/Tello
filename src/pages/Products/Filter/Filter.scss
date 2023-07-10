@@ -1,0 +1,61 @@
+@import "../../../scss/variables.scss";
+.filter {
+  padding: 42px 0 10px 20px;
+  .filter-title {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $clr-gray4;
+    padding: 10px;
+    h3 {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $clr-gray2;
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+    gap: 16px;
+    li {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      input {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        accent-color: $clr-main;
+
+        border: none;
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          width: 20px;
+          height: 20px;
+          border-radius: 3px;
+          background: rgba(0, 214, 143, 0.16);
+          border: 1px solid $clr-main;
+          //   filter: brightness(0) invert(1);
+        }
+      }
+      label {
+        font-size: 14px;
+        line-height: 20px;
+
+        color: $clr-gray2;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .filter {
+    width: 65%;
+    padding: 0;
+  }
+}
